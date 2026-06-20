@@ -1,8 +1,7 @@
 import Frames.InvoicesTableFrame;
-import com.formdev.flatlaf.themes.FlatMacLightLaf;
+import com.formdev.flatlaf.themes.FlatMacDarkLaf;
 
 import javax.swing.*;
-import javax.swing.plaf.ColorUIResource;
 import java.awt.*;
 
 
@@ -10,7 +9,7 @@ public class Main {
     public static void initUI(){
         try {
 
-            UIManager.setLookAndFeel( new FlatMacLightLaf() );
+            UIManager.setLookAndFeel( new FlatMacDarkLaf() );
             UIManager.put("Table.showVerticalLines",true);
             UIManager.put("Table.showHorizontalLines",true);
             UIManager.put( "Button.arc", 10 );
@@ -20,8 +19,6 @@ public class Main {
             UIManager.put( "ScrollBar.thumbArc", 999 );
             UIManager.put( "ScrollBar.thumbInsets", new Insets( 2, 2, 2, 2 ) );
             UIManager.put( "Table.intercellSpacing", new Dimension( 0, 1 ) );
-            UIManager.put( "Table.selectionBackground", new ColorUIResource(216, 223, 255));
-            UIManager.put( "Table.selectionForeground", new ColorUIResource(0, 0, 0));
         } catch( Exception ex ) {
             System.err.println( "Failed to initialize FlatLaF" );
         }
