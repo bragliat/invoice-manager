@@ -1,8 +1,6 @@
 # Invoice Manager
 
-A Java Swing desktop application for tracking invoices, built for the Object-Oriented Programming exam at UniMoRe (Bachelor's in Computer Science).
-
-Lets you add, edit, delete, filter, and search invoices in a table view, then save your data or export it to Excel, CSV, or plain text.
+A Java Swing desktop application for tracking invoices.
 
 ## Features
 
@@ -10,7 +8,7 @@ Lets you add, edit, delete, filter, and search invoices in a table view, then sa
 - Filter and search invoices by date range and text
 - Sortable table view
 - Save and load data in a custom binary format
-- Export to Excel (via Apache POI), CSV, or plain text
+- Export to Excel, CSV, or plain text
 - Custom date picker component
 - Styled with FlatLaf for a modern look
 
